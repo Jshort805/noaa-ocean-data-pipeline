@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: noaa
+    database: NOAA_Data
+    schema: main
+    tables:
+      - name: bronze_water_data
+      - name: bronze_wind_data

@@ -1,0 +1,11 @@
+NOAA_Data_Project:
+  outputs:
+   dev:
+     type: duckdb
+     path: '../NOAA_Data_Project/NOAA_Data.db'
+   prod:
+     type: duckdb
+     # note that path is slightly different as GitHub actions
+     # start in the root directory
+     path: '{{ env_var("GITHUB_WORKSPACE") }}/NOAA_Data_Project/prod_NOAA_Data.db'  
+  target: dev

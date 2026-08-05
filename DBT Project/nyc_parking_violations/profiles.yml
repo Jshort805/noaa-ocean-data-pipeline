@@ -2,7 +2,7 @@ nyc_parking_violations:
   outputs:
    dev:
      type: duckdb
-     path: '../DBT Project/nyc_parking_violations.db'
+     path: '../nyc_parking_violations.db'
    prod:
      type: duckdb
      # note that path is slightly different as GitHub actions

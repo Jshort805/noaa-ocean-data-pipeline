@@ -1,7 +1,7 @@
 
 # NOAA Ocean Data Pipeline
 
-A dbt + DuckDB pipeline that ingests real-time tide and wind data from the NOAA CO-OPS API, transforms it through a bronze/silver/gold medallion architecture, and produces marine condition metrics — including a noise-corrected tide direction signal derived from raw 6-minute sensor readings.
+A dbt + DuckDB pipeline that ingests real-time tide and wind data from the NOAA CO-OPS API, transforms it through a bronze/silver/gold medallion architecture, and produces marine condition metrics; including a noise-corrected tide direction signal derived from raw 6-minute sensor readings.
 
 ## What this project demonstrates
 

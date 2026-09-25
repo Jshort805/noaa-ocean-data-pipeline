@@ -8609,3 +8609,143 @@ alter table "NOAA_Data"."main"."gold_marine_conditions__dbt_tmp" rename to "gold
 [0m03:05:12.383380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6e6fa14fe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6e6fa17bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6e704e6ea0>]}
 [0m03:05:12.383954 [debug] [MainThread]: Flushing usage events
 [0m03:05:12.718480 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:06.952199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754570dba0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7545700f1970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754570218170>]}
+
+
+============================== 17:08:07.061524 | 57137ef3-4e0f-4acd-aa2f-38dbdfd328ce ==============================
+[0m17:08:07.061524 [info ] [MainThread]: Running with dbt=1.11.12
+[0m17:08:07.062379 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'invocation_command': 'dbt docs generate', 'printer_width': '80', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'profiles_dir': '/workspaces/Data-Analytics/NOAA_Data_Project', 'fail_fast': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'debug': 'False', 'log_path': '/workspaces/Data-Analytics/NOAA_Data_Project/logs', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'target_path': 'None'}
+[0m17:08:09.919077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75456f0a40e0>]}
+[0m17:08:10.025077 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75456f0fa570>]}
+[0m17:08:10.028734 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m17:08:10.269509 [debug] [MainThread]: checksum: f368f5348cf42803b94ef7fb8257ecf3bf9a9a16dd9c8c51fe5172f2dbeb457f, vars: {}, profile: , target: , version: 1.11.12
+[0m17:08:10.857126 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:08:10.857750 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:08:10.858282 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:08:10.865518 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.NOAA_Data_Project.bronze
+[0m17:08:10.902157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75456a27ddf0>]}
+[0m17:08:10.915559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754569dd22d0>]}
+[0m17:08:10.916229 [info ] [MainThread]: Found 3 models, 2 sources, 485 macros
+[0m17:08:10.916875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754569b47470>]}
+[0m17:08:10.918949 [info ] [MainThread]: 
+[0m17:08:10.919578 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:08:10.920146 [info ] [MainThread]: 
+[0m17:08:10.920877 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m17:08:10.928034 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_NOAA_Data_main'
+[0m17:08:11.267608 [debug] [ThreadPool]: Using duckdb connection "list_NOAA_Data_main"
+[0m17:08:11.268218 [debug] [ThreadPool]: On list_NOAA_Data_main: BEGIN
+[0m17:08:11.268743 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:08:11.456237 [debug] [ThreadPool]: SQL status: OK in 0.187 seconds
+[0m17:08:11.456896 [debug] [ThreadPool]: Using duckdb connection "list_NOAA_Data_main"
+[0m17:08:11.457374 [debug] [ThreadPool]: On list_NOAA_Data_main: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "NOAA_Data_Project", "target_name": "dev", "connection_name": "list_NOAA_Data_main"} */
+select
+      'NOAA_Data' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'noaa_data'
+  
+[0m17:08:11.470296 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m17:08:11.472170 [debug] [ThreadPool]: On list_NOAA_Data_main: ROLLBACK
+[0m17:08:11.473731 [debug] [ThreadPool]: Failed to rollback 'list_NOAA_Data_main'
+[0m17:08:11.474234 [debug] [ThreadPool]: On list_NOAA_Data_main: Close
+[0m17:08:11.476019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '57137ef3-4e0f-4acd-aa2f-38dbdfd328ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75456fb78500>]}
+[0m17:08:11.478749 [debug] [Thread-1 (]: Began running node model.NOAA_Data_Project.silver_water_data
+[0m17:08:11.479319 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_NOAA_Data_main, now model.NOAA_Data_Project.silver_water_data)
+[0m17:08:11.479887 [debug] [Thread-1 (]: Began compiling node model.NOAA_Data_Project.silver_water_data
+[0m17:08:11.488269 [debug] [Thread-1 (]: Writing injected SQL for node "model.NOAA_Data_Project.silver_water_data"
+[0m17:08:11.489141 [debug] [Thread-1 (]: Began executing node model.NOAA_Data_Project.silver_water_data
+[0m17:08:11.490039 [debug] [Thread-1 (]: Finished running node model.NOAA_Data_Project.silver_water_data
+[0m17:08:11.490662 [debug] [Thread-1 (]: Began running node model.NOAA_Data_Project.silver_wind_data
+[0m17:08:11.491309 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.NOAA_Data_Project.silver_water_data, now model.NOAA_Data_Project.silver_wind_data)
+[0m17:08:11.491883 [debug] [Thread-1 (]: Began compiling node model.NOAA_Data_Project.silver_wind_data
+[0m17:08:11.494572 [debug] [Thread-1 (]: Writing injected SQL for node "model.NOAA_Data_Project.silver_wind_data"
+[0m17:08:11.495356 [debug] [Thread-1 (]: Began executing node model.NOAA_Data_Project.silver_wind_data
+[0m17:08:11.496210 [debug] [Thread-1 (]: Finished running node model.NOAA_Data_Project.silver_wind_data
+[0m17:08:11.497274 [debug] [Thread-1 (]: Began running node model.NOAA_Data_Project.gold_marine_conditions
+[0m17:08:11.497947 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.NOAA_Data_Project.silver_wind_data, now model.NOAA_Data_Project.gold_marine_conditions)
+[0m17:08:11.498518 [debug] [Thread-1 (]: Began compiling node model.NOAA_Data_Project.gold_marine_conditions
+[0m17:08:11.502900 [debug] [Thread-1 (]: Writing injected SQL for node "model.NOAA_Data_Project.gold_marine_conditions"
+[0m17:08:11.503724 [debug] [Thread-1 (]: Began executing node model.NOAA_Data_Project.gold_marine_conditions
+[0m17:08:11.504575 [debug] [Thread-1 (]: Finished running node model.NOAA_Data_Project.gold_marine_conditions
+[0m17:08:11.505653 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:08:11.506104 [debug] [MainThread]: Connection 'model.NOAA_Data_Project.gold_marine_conditions' was properly closed.
+[0m17:08:11.507163 [debug] [MainThread]: Command end result
+[0m17:08:11.730839 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Data-Analytics/NOAA_Data_Project/target/manifest.json
+[0m17:08:11.734576 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Data-Analytics/NOAA_Data_Project/target/semantic_manifest.json
+[0m17:08:11.746901 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/Data-Analytics/NOAA_Data_Project/target/run_results.json
+[0m17:08:11.753290 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m17:08:11.754009 [info ] [MainThread]: Building catalog
+[0m17:08:11.766374 [debug] [ThreadPool]: Acquiring new duckdb connection 'NOAA_Data.information_schema'
+[0m17:08:11.773868 [debug] [ThreadPool]: Using duckdb connection "NOAA_Data.information_schema"
+[0m17:08:11.774416 [debug] [ThreadPool]: On NOAA_Data.information_schema: BEGIN
+[0m17:08:11.774938 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:08:11.775966 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m17:08:11.776470 [debug] [ThreadPool]: Using duckdb connection "NOAA_Data.information_schema"
+[0m17:08:11.776995 [debug] [ThreadPool]: On NOAA_Data.information_schema: /* {"app": "dbt", "dbt_version": "1.11.12", "profile_name": "NOAA_Data_Project", "target_name": "dev", "connection_name": "NOAA_Data.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'NOAA_Data'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'NOAA_Data'
+    )
+    select
+        'NOAA_Data' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m17:08:11.796089 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m17:08:11.803306 [debug] [ThreadPool]: On NOAA_Data.information_schema: ROLLBACK
+[0m17:08:11.804649 [debug] [ThreadPool]: Failed to rollback 'NOAA_Data.information_schema'
+[0m17:08:11.805162 [debug] [ThreadPool]: On NOAA_Data.information_schema: Close
+[0m17:08:11.817004 [debug] [MainThread]: Wrote artifact CatalogArtifact to /workspaces/Data-Analytics/NOAA_Data_Project/target/catalog.json
+[0m17:08:11.849774 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/Data-Analytics/NOAA_Data_Project/target/manifest.json
+[0m17:08:11.851848 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/Data-Analytics/NOAA_Data_Project/target/semantic_manifest.json
+[0m17:08:11.852357 [info ] [MainThread]: Catalog written to /workspaces/Data-Analytics/NOAA_Data_Project/target/catalog.json
+[0m17:08:11.854040 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 5.032989, "process_in_blocks": "84552", "process_kernel_time": 0.389005, "process_mem_max_rss": "190956", "process_out_blocks": "5792", "process_user_time": 4.401746}
+[0m17:08:11.854717 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:08:11.854602 after 5.03 seconds
+[0m17:08:11.855192 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:08:11.855692 [debug] [MainThread]: Connection 'NOAA_Data.information_schema' was properly closed.
+[0m17:08:11.856187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75457103e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x754569c99640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x75456a2301a0>]}
+[0m17:08:11.856764 [debug] [MainThread]: Flushing usage events
+[0m17:08:12.111859 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:08:22.006672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x791a8852b530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x791a889221b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x791a8af45a00>]}
+
+
+============================== 17:08:22.010100 | 3568290b-bb7a-4ffa-907e-1d9992357c06 ==============================
+[0m17:08:22.010100 [info ] [MainThread]: Running with dbt=1.11.12
+[0m17:08:22.010959 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'debug': 'False', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'empty': 'None', 'introspect': 'True', 'warn_error': 'None', 'static_parser': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'profiles_dir': '/workspaces/Data-Analytics/NOAA_Data_Project', 'invocation_command': 'dbt docs serve', 'printer_width': '80', 'log_format': 'default', 'log_path': '/workspaces/Data-Analytics/NOAA_Data_Project/logs', 'partial_parse': 'True', 'use_colors': 'True', 'log_cache_events': 'False'}
+[0m17:08:22.266945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3568290b-bb7a-4ffa-907e-1d9992357c06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x791a8ad06cc0>]}
+[0m17:08:22.340137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3568290b-bb7a-4ffa-907e-1d9992357c06', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x791a888bf110>]}
